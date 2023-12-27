@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>购物车项目</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="main">
+			<!-- 限时秒杀 -->
+			<div class="box">
+				<div id="d"></div> <!-- 剩余的天数 -->
+				<div id="h"></div> <!-- 剩余的小时 -->
+				<div id="m"></div> <!-- 剩余的分钟 -->
+				<div id="s"></div> <!-- 剩余的秒数 -->
+			</div>
+			<!-- 新书快递 -->
+			<div class="newbook">
+				<ul class="block-items">
+				</ul>
+			</div>
+			<!-- 购物车 -->
+			<div class="cart">
+				<div class="cart-title">我的购物车</div>
+				<table class="cart-table">
+					<thead>
+						<tr>
+							<th width="60"><span><input type="checkbox" id="cart-all">全选</span></th>
+							<th>商品</th>
+							<th width="120">单价</th>
+							<th width="100">数量</th>
+							<th width="120">小计</th>
+							<th width="80">操作</th>
+						</tr>
+					</thead>
+					<tbody id="cart"></tbody>
+					<tfoot>
+						<tr class="cart-bottom">
+							<td colspan="6">
+								<span class="cart-bottom-span">已选择 <span class="cart-total-num">0</span> 件商品</span>
+								<span class="cart-bottom-span">总计：<span id="total">0</span></span>
+								<span class="cart-bottom-btn">提交订单</span>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<!-- <script src="js/main.js"></script> -->
+		<!-- <script src="js/index.js"></script> -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<!-- <script src="js/index - 副本 (2).js"></script> -->
+		<script src="js/index - 副本.js"></script>
+	</body>
+
+</html>

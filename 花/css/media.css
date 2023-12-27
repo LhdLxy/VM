@@ -1,0 +1,178 @@
+/* 当页面大于 1200px 时，大屏幕，主要是 PC 端 */
+@media screen and (min-width:1200px) {
+   #lunbo {
+      height: 600px;
+   }
+
+   #right-btn1 {
+      right: -60px;
+   }
+}
+
+/*在 992 和 1199 像素之间的屏幕里，中等屏幕，分辨率低的 PC*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+   #lunbo {
+      height: 500px;
+      padding: 120px 100px 100px;
+   }
+
+   .main-tow-box {
+      flex: 3;
+   }
+
+   #right-btn1 {
+      right: -60px;
+   }
+}
+
+/*在 768 和 991 像素之间的屏幕里，小屏幕，主要是 PAD*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   #head h1 {
+      display: none;
+   }
+
+   #lunbo {
+      height: 400px;
+      padding: 50px 100px 80px;
+   }
+
+   .main-one-left {
+      width: 100%;
+   }
+
+
+   .main-one-rigth {
+      display: none;
+   }
+
+   #right-btn1 {
+      right: -60px;
+   }
+
+   #nav>ul {
+      display: none;
+   }
+
+   #wrap-ul-two {
+      display: block;
+   }
+}
+
+/*在 480 和 767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media screen and (max-width:767px) and (min-width:480px) {
+   #head h1 {
+      display: none;
+   }
+
+   #lunbo {
+      width: 100%;
+      height: 350px;
+      padding: 50px 0 70px;
+   }
+
+   #toleft1 {
+      position: absolute;
+      left: 0;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      /* display: none; */
+   }
+
+   #right-btn1 {
+      position: absolute;
+      right: 0px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      /* display: none; */
+   }
+
+   .wrap>span {
+      opacity: .6;
+      background: rgba(255, 255, 255, .4);
+   }
+
+   .main-one {
+      padding: 0 25px;
+   }
+
+   .main-one-left {
+      width: 100%;
+
+   }
+
+   .main-one-rigth {
+      display: none;
+   }
+
+   .main-tow-box {
+      gap: 20px;
+   }
+
+   #nav>ul {
+      display: none;
+   }
+
+   #wrap-ul-two {
+      display: block;
+   }
+}
+
+/*在小于 480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media screen and (max-width:480px) {
+   #head h1 {
+      display: none;
+   }
+
+   #lunbo {
+      width: 100%;
+      height: 350px;
+      padding: 50px 0 70px;
+   }
+
+   .main-one-left {
+      width: 100%;
+
+   }
+
+   .main-one-rigth {
+      display: none;
+   }
+
+   #toleft1 {
+      position: absolute;
+      left: 0;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      /* display: none; */
+   }
+
+   #right-btn1 {
+      position: absolute;
+      right: 0px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      /* display: none; */
+   }
+
+   .wrap>span {
+      opacity: .6;
+      background: rgba(255, 255, 255, .4);
+   }
+
+   .main-one {
+      padding: 0 25px;
+   }
+
+   .main-tow-box {
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   #nav>ul {
+      display: none;
+   }
+
+   #wrap-ul-two {
+      display: block;
+   }
+}
